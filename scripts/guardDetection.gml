@@ -7,8 +7,9 @@ if (on_ground) {
     fric = S_AIR_FRIC;
 }
 
-if( dist2D( x, y, obj_player.x, obj_player.y ) < 128  &&
-    dist2D( x, y, obj_player.x, obj_player.y ) > 64 ){
+
+//follow the player!
+if( dist2D( x, y, obj_player.x, obj_player.y ) < 128 ){
     image_speed = 0.5;
     //If you're to the left of the guard
     if( obj_player.x < x ){
@@ -18,6 +19,7 @@ if( dist2D( x, y, obj_player.x, obj_player.y ) < 128  &&
         hspd = approach( hspd, -S_MAX_H, accel ); 
         sprite_index = spr_guardL;
     }
+    
     //If you're to the right of the guard
     else if( obj_player.x > x ){
         if (hspd < 0)
@@ -26,17 +28,13 @@ if( dist2D( x, y, obj_player.x, obj_player.y ) < 128  &&
         hspd = approach( hspd, S_MAX_H, accel ); 
         sprite_index = spr_guardR;
     }
-}
-
-if( dist2D( x, y, obj_player.x, obj_player.y ) < 64 ){
-    //Stop moving
-    hspd = approach( hspd, 0, fric );
-
-
-    //If you're to the right of the guard
-    if( obj_player.x > x ){
-        image_speed = 0.25;
-        sprite_index = spr_guardShootR;
+    
+    //Jump
+    if( on_ground && y - 16 > obj_player.y ){
+        //Check if you're on a slope
+        if( !place_meeting( x, y + 1, obj_slopeR2_mask )){
+            vspd = S_JUMP_SPEED;
+        }
     }
 }
 
