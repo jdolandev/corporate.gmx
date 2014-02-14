@@ -30,6 +30,8 @@
     y = obj_player.y;
 }
 dist = 0;
+
+j_up = gp_axislv;
 </string>
           </argument>
         </arguments>
@@ -55,7 +57,7 @@ dist = 0;
             <string>x = obj_player.x;
 y = obj_player.y - dist;
 
-if( keyboard_check( vk_up )){
+if( keyboard_check( vk_up ) || gamepad_axis_value(0, j_up) &lt; -0.25){
     //If you're within 64 pixels of distance from the player
     if( dist &lt; 64 ){
         y = obj_player.y - dist; //Pan upward
