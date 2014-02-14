@@ -37,6 +37,7 @@
       <sprites name="Security Guard">
         <sprite>sprites\spr_guardR</sprite>
         <sprite>sprites\spr_guardL</sprite>
+        <sprite>sprites\spr_guardShootR</sprite>
       </sprites>
     </sprites>
   </sprites>
