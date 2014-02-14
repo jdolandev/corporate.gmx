@@ -43,7 +43,8 @@ h_counter = 0;
 v_counter = 0;
 
 //This variables holds whether the object is sitting on solid ground.
-on_ground = false;</string>
+on_ground = false;
+</string>
           </argument>
         </arguments>
       </action>
@@ -143,7 +144,8 @@ repeat (abs(v))
 }
 
 if (collide)
-    event_perform( ev_other, ev_user1 );</string>
+    event_perform( ev_other, ev_user1 );
+</string>
           </argument>
         </arguments>
       </action>
@@ -165,7 +167,8 @@ if (collide)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>on_ground = checkBelow();</string>
+            <string>on_ground = checkBelow();
+</string>
           </argument>
         </arguments>
       </action>

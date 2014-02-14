@@ -36,6 +36,7 @@
     <sprites name="Enemies">
       <sprites name="Security Guard">
         <sprite>sprites\spr_guardR</sprite>
+        <sprite>sprites\spr_guardL</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -52,6 +53,11 @@
     <scripts name="math">
       <script>scripts\approach.gml</script>
       <script>scripts\dist2D.gml</script>
+    </scripts>
+    <scripts name="AI">
+      <scripts name="Guard">
+        <script>scripts\guardDetection.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -79,7 +85,7 @@
     <object>objects\obj_effectSnow</object>
     <object>objects\obj_pauseMenu</object>
     <object>objects\obj_door</object>
-    <object>objects\object15</object>
+    <object>objects\obj_testAI</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
