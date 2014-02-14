@@ -66,20 +66,20 @@
     <option_android_texture_page>1024</option_android_texture_page>
     <option_android_use_test_ads>0</option_android_use_test_ads>
     <option_argumenterrors>True</option_argumenterrors>
-    <option_author></option_author>
+    <option_author>CMYK</option_author>
     <option_backimage>nil</option_backimage>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
     <option_colordepth>0</option_colordepth>
-    <option_display_name>GameMaker: Studio</option_display_name>
+    <option_display_name>Corporate Commandos</option_display_name>
     <option_displayerrors>True</option_displayerrors>
     <option_facebook_appid></option_facebook_appid>
     <option_facebook_enable>0</option_facebook_enable>
     <option_freeze>false</option_freeze>
     <option_frequency>0</option_frequency>
     <option_frontimage>nil</option_frontimage>
-    <option_fullscreen>True</option_fullscreen>
+    <option_fullscreen>False</option_fullscreen>
     <option_gameguid>{1B51CA1B-40A8-4C3D-A949-64415640C59F}</option_gameguid>
     <option_gameid>369730897</option_gameid>
     <option_haptic_effects>0</option_haptic_effects>
@@ -179,7 +179,7 @@
     <option_mac_build_version>0</option_mac_build_version>
     <option_mac_copyright_info>(c)2012 CompanyName Ltd...</option_mac_copyright_info>
     <option_mac_create_app_store>-1</option_mac_create_app_store>
-    <option_mac_display_name>corporate</option_mac_display_name>
+    <option_mac_display_name>Corporate Commandos</option_mac_display_name>
     <option_mac_enable_steam>0</option_mac_enable_steam>
     <option_mac_fullscreen>0</option_mac_fullscreen>
     <option_mac_icon_png>Configs\Default\mac\icon512.png</option_mac_icon_png>
@@ -204,7 +204,7 @@
     <option_quitkey>true</option_quitkey>
     <option_resolution>0</option_resolution>
     <option_savekey>true</option_savekey>
-    <option_scale>-1</option_scale>
+    <option_scale>0</option_scale>
     <option_scaleprogress>true</option_scaleprogress>
     <option_screenkey>True</option_screenkey>
     <option_screenshotkey>true</option_screenshotkey>
@@ -212,7 +212,7 @@
     <option_showprogress>1</option_showprogress>
     <option_sizeable>False</option_sizeable>
     <option_stayontop>false</option_stayontop>
-    <option_sync_vertex>0</option_sync_vertex>
+    <option_sync_vertex>1</option_sync_vertex>
     <option_textureGroup0_border>2</option_textureGroup0_border>
     <option_textureGroup0_nocropping>0</option_textureGroup0_nocropping>
     <option_textureGroup0_parent>&lt;none&gt;</option_textureGroup0_parent>
@@ -240,13 +240,13 @@
     <option_variableerrors>False</option_variableerrors>
     <option_version>100</option_version>
     <option_version_build>0</option_version_build>
-    <option_version_company></option_version_company>
+    <option_version_company>CMYK</option_version_company>
     <option_version_copyright></option_version_copyright>
     <option_version_description></option_version_description>
-    <option_version_major>1</option_version_major>
+    <option_version_major>0</option_version_major>
     <option_version_minor>0</option_version_minor>
-    <option_version_product></option_version_product>
-    <option_version_release>0</option_version_release>
+    <option_version_product>Corporate Commandos</option_version_product>
+    <option_version_release>1</option_version_release>
     <option_win8_advertising_appid></option_win8_advertising_appid>
     <option_win8_advertising_enable>0</option_win8_advertising_enable>
     <option_win8_advertising_key></option_win8_advertising_key>
@@ -284,20 +284,20 @@
     <option_win8_wide_logo>Configs\Default\Windows8\logos\logo310.png</option_win8_wide_logo>
     <option_windowcolor>clBlack</option_windowcolor>
     <option_windows_build_version>0</option_windows_build_version>
-    <option_windows_company_info></option_windows_company_info>
+    <option_windows_company_info>CMYK</option_windows_company_info>
     <option_windows_copyright_info></option_windows_copyright_info>
     <option_windows_description_info></option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
     <option_windows_mainor_version>0</option_windows_mainor_version>
-    <option_windows_major_version>1</option_windows_major_version>
+    <option_windows_major_version>0</option_windows_major_version>
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
-    <option_windows_product_info></option_windows_product_info>
-    <option_windows_release_version>0</option_windows_release_version>
+    <option_windows_product_info>Corporate Commandos</option_windows_product_info>
+    <option_windows_release_version>1</option_windows_release_version>
     <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
     <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>
-    <option_windows_save_location>0</option_windows_save_location>
+    <option_windows_save_location>1</option_windows_save_location>
     <option_windows_splash_screen>Configs\Default\windows\splash.png</option_windows_splash_screen>
     <option_windows_steam_app_id>0</option_windows_steam_app_id>
     <option_windows_texture_page>2048</option_windows_texture_page>

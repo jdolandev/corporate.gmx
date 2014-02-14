@@ -32,7 +32,8 @@ if( dist2D( x, y, obj_player.x, obj_player.y ) < 128 ){
     //Jump
     if( on_ground && y - 16 > obj_player.y ){
         //Check if you're on a slope
-        if( !place_meeting( x, y + 1, obj_slopeR2_mask )){
+        if( !place_meeting( x, y + 1, obj_slopeR2_mask ) && 
+            !place_meeting( x, y + 1, obj_slopeL2_mask)){
             vspd = S_JUMP_SPEED;
         }
     }
