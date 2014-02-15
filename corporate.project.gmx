@@ -7,6 +7,8 @@
   <sounds name="sound">
     <sound>sound\snd_hit1</sound>
     <sound>sound\snd_music</sound>
+    <sound>sound\snd_hit2</sound>
+    <sound>sound\snd_hit3</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">

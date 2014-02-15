@@ -251,7 +251,14 @@ if (on_ground) {
             <kind>1</kind>
             <string>vspd = 0;
 if( place_meeting(x, y - 8, obj_floor )){
-    sound_play( snd_hit1 );
+    randomize();
+    sound = irandom(2);
+    if( sound == 0 )
+        sound_play( snd_hit1 );
+    else if( sound == 1 )
+        sound_play( snd_hit2 );
+    else if( sound == 2 )
+        sound_play( snd_hit3 );
     dir1 = irandom(360);
     action_create_object_motion( obj_pixel, x,y, random(0.25) + 0.25, dir1 );
     action_create_object_motion( obj_pixel, x,y, random(0.25) + 0.25, dir1 + 180 );
