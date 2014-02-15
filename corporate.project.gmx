@@ -69,6 +69,7 @@
   <objects name="objects">
     <objects name="player">
       <object>objects\obj_player</object>
+      <object>objects\obj_guard</object>
       <object>objects\obj_debug</object>
       <object>objects\obj_moveable</object>
       <object>objects\obj_focus</object>

@@ -50,7 +50,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_player" x="48" y="288" name="inst_D9B03330" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="48" y="304" name="inst_EBA46443" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="32" y="304" name="inst_D69FA2A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="16" y="304" name="inst_330D6ED6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -240,6 +239,7 @@
     <instance objName="obj_waterdrip" x="608" y="464" name="inst_A978D1C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterdrip" x="560" y="464" name="inst_C936EE9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterdrip" x="464" y="464" name="inst_BE04B8B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="64" y="288" name="inst_F1E46F55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background1" x="16" y="304" w="16" h="16" xo="0" yo="0" id="10000902" name="inst_C50D8E63" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
