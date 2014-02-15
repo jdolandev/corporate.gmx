@@ -32,9 +32,10 @@
     <sprites name="particles">
       <sprite>sprites\spr_snow</sprite>
       <sprite>sprites\spr_particle</sprite>
+      <sprite>sprites\spr_watereffect</sprite>
+      <sprite>sprites\spr_waterdrop</sprite>
     </sprites>
     <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\sprite15</sprite>
     <sprites name="Enemies">
       <sprites name="Security Guard">
         <sprite>sprites\spr_guardR</sprite>
@@ -84,11 +85,13 @@
     <objects name="particles">
       <object>objects\obj_pixel</object>
       <object>objects\obj_snow</object>
+      <object>objects\obj_waterdrip</object>
     </objects>
     <object>objects\obj_effectSnow</object>
     <object>objects\obj_pauseMenu</object>
     <object>objects\obj_door</object>
     <object>objects\obj_testAI</object>
+    <object>objects\obj_waterpart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
