@@ -110,8 +110,8 @@ vspd = 0;
 if( place_meeting(x, y - 8, obj_floor )){
     sound_play( snd_hit1 );
     dir1 = irandom(360);
-    action_create_object_motion( obj_pixel, x,y, random(0.25) + 0.25, dir1 );
-    action_create_object_motion( obj_pixel, x,y, random(0.25) + 0.25, dir1 + 180 );
+    action_create_object_motion( obj_pixel, x,y - 4, random(0.25) + 0.25, dir1 );
+    action_create_object_motion( obj_pixel, x,y - 4, random(0.25) + 0.25, dir1 + 180 );
 }
 </string>
           </argument>

@@ -51,7 +51,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="gameplay">
-      <script>scripts\stageInit.gml</script>
       <script>scripts\checkBelow.gml</script>
     </scripts>
     <scripts name="math">
