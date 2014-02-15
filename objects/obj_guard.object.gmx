@@ -35,7 +35,7 @@ S_AIR_ACCEL     = 0.4;      //Accel. from running in the air
 S_AIR_FRIC      = 0.2;      //Friction in the air (
 S_JUMP_SPEED    = -4.5;
 S_DJUMP_SPEED   = -0;       //Double jump speed
-S_MAX_H         = 1;        //Max horizontal speed
+S_MAX_H         = 5;        //Max horizontal speed
 S_MAX_V         = 5;        //Max vertical speed
 S_SLOPE_SLOW    = 0.7;      //Decceleration while climbing slopes
 
@@ -286,7 +286,7 @@ if( place_meeting(x, y - 8, obj_floor )){
     //Vibrate the controller on impact  :D
     if( gamepad_is_connected(0) ){
         gamepad_set_vibration( 0, 0.5, 0.5 );
-        alarm[0] = room_speed / 4;
+        alarm[0] = room_speed / 5;
     }
 }
 </string>
