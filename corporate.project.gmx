@@ -12,11 +12,17 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
-      <sprite>sprites\spr_playerR</sprite>
-      <sprite>sprites\spr_playerSR</sprite>
-      <sprite>sprites\spr_playerSL</sprite>
-      <sprite>sprites\spr_playerL</sprite>
       <sprite>sprites\spr_focus</sprite>
+      <sprites name="test">
+        <sprite>sprites\spr_playerL</sprite>
+        <sprite>sprites\spr_playerSL</sprite>
+        <sprite>sprites\spr_playerSR</sprite>
+        <sprite>sprites\spr_playerR</sprite>
+      </sprites>
+      <sprites name="brute">
+        <sprite>sprites\spr_bruteR</sprite>
+        <sprite>sprites\spr_bruteL</sprite>
+      </sprites>
     </sprites>
     <sprites name="blocks">
       <sprite>sprites\spr_floor_mask</sprite>
@@ -69,6 +75,7 @@
   <objects name="objects">
     <objects name="player">
       <object>objects\obj_player</object>
+      <object>objects\obj_brute</object>
       <object>objects\obj_guard</object>
       <object>objects\obj_debug</object>
       <object>objects\obj_moveable</object>
@@ -92,6 +99,8 @@
     <object>objects\obj_door</object>
     <object>objects\obj_testAI</object>
     <object>objects\obj_waterpart</object>
+    <object>objects\object19</object>
+    <object>objects\object20</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
