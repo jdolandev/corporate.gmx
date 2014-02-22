@@ -100,8 +100,7 @@
     <object>objects\obj_door</object>
     <object>objects\obj_testAI</object>
     <object>objects\obj_waterpart</object>
-    <object>objects\object19</object>
-    <object>objects\object20</object>
+    <object>objects\obj_slots</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

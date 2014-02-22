@@ -28,12 +28,76 @@
             <string>//Player controller object has 4 slots
 //You can cycle between them with rb and lb
 
-slot1 = global.firstslot;   //  First   character
-slot2 = global.secondslot;  //  Second  character
-slot3 = global.thirdslot;   //  Third   character
-slot4 = global.fourthslot;  //  Fourth  character
+firstChar = obj_player;
+secondChar = obj_brute;
+thirdChar = obj_guard;
+fourthChar = obj_brute;
 
-slotnum = 1;    //Start the game with the first slot being highlighted.
+charSlots[0] = firstChar;
+charSlots[1] = secondChar;
+charSlots[2] = thirdChar;
+charSlots[3] = fourthChar;
+
+var playerOut;
+
+slotnum = 0;    //Start the game with the first slot being highlighted.
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>k_switchl = ord('A');
+k_switchr = ord('S');
+
+instance_create( 100, 100, charSlots[0]);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( keyboard_check( k_switchr )){
+    
+    slotnum++;
+    
+    if( instance_exists( obj_player )){
+        instance_create( obj_player.x, obj_player.y, charSlots[slotnum]);
+        with( obj_player ){
+            instance_destroy();
+        }
+    }
+}
 </string>
           </argument>
         </arguments>

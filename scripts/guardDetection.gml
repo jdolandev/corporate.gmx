@@ -9,7 +9,8 @@ if (on_ground) {
 
 
 //follow the player!
-if( dist2D( x, y, obj_player.x, obj_player.y ) < 128 ){
+if( dist2D( x, y,   obj_playerControler.charSlots[slotnum].x,
+                    obj_playerControler.charSlots[slotnum].y ) < 128 ){
     image_speed = 0.5;
     //If you're to the left of the guard
     if( obj_player.x < x ){
@@ -21,7 +22,7 @@ if( dist2D( x, y, obj_player.x, obj_player.y ) < 128 ){
     }
     
     //If you're to the right of the guard
-    else if( obj_player.x > x ){
+    else if( obj_playerControler.charSlots[obj_playerController.slotnum].x > x ){
         if (hspd < 0)
             hspd = approach( hspd, 0, fric );
         
@@ -30,7 +31,7 @@ if( dist2D( x, y, obj_player.x, obj_player.y ) < 128 ){
     }
     
     //Jump
-    if( on_ground && y - 16 > obj_player.y ){
+    if( on_ground && y - 16 > obj_playerControler.charSlots[obj_playerController.slotnum].y ){
         //Check if you're on a slope
         if( !place_meeting( x, y + 1, obj_slopeR2_mask ) && 
             !place_meeting( x, y + 1, obj_slopeL2_mask)){

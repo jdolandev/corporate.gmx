@@ -239,8 +239,8 @@
     <instance objName="obj_waterdrip" x="608" y="464" name="inst_A978D1C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterdrip" x="560" y="464" name="inst_C936EE9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterdrip" x="464" y="464" name="inst_BE04B8B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="64" y="288" name="inst_CE0336E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_brute" x="48" y="272" name="inst_2B5EF7C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playerController" x="0" y="0" name="inst_D0FD42EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slots" x="16" y="0" name="inst_2981BEF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background1" x="16" y="304" w="16" h="16" xo="0" yo="0" id="10000902" name="inst_C50D8E63" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
