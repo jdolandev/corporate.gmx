@@ -80,6 +80,7 @@
       <object>objects\obj_debug</object>
       <object>objects\obj_moveable</object>
       <object>objects\obj_focus</object>
+      <object>objects\obj_playerController</object>
     </objects>
     <objects name="blocks">
       <object>objects\obj_floor</object>

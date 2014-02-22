@@ -6,7 +6,7 @@
   <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
-  <speed>60</speed>
+  <speed>600</speed>
   <persistent>0</persistent>
   <colour>8421440</colour>
   <showcolour>-1</showcolour>
@@ -107,7 +107,7 @@
     <instance objName="obj_slopeL2_mask" x="720" y="352" name="inst_75D594A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slopeL2_mask" x="752" y="368" name="inst_C2E91D7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slopeL2_mask" x="784" y="384" name="inst_2B98A9D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floor" x="576" y="272" name="inst_079BF561" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floor" x="592" y="272" name="inst_079BF561" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="896" y="400" name="inst_5ACF382C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="880" y="400" name="inst_C95DAAA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="864" y="400" name="inst_211CD71D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -683,7 +683,7 @@
     <tile bgName="background1" x="720" y="416" w="16" h="16" xo="16" yo="0" id="10001490" name="inst_7FBDDD5F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background1" x="704" y="416" w="16" h="16" xo="16" yo="0" id="10001491" name="inst_F770EFF0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background1" x="704" y="400" w="16" h="16" xo="16" yo="0" id="10001492" name="inst_3EF2A53D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="576" y="272" w="16" h="16" xo="16" yo="0" id="10001494" name="inst_52390618" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background1" x="592" y="272" w="16" h="16" xo="16" yo="0" id="10001494" name="inst_52390618" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background1" x="816" y="400" w="16" h="16" xo="0" yo="0" id="10001495" name="inst_4BBC34DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background1" x="832" y="400" w="16" h="16" xo="0" yo="0" id="10001496" name="inst_FB235654" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background1" x="848" y="400" w="16" h="16" xo="0" yo="0" id="10001497" name="inst_2DA578C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
