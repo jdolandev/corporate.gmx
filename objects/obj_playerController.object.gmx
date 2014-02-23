@@ -64,7 +64,7 @@ slotnum = 0;    //Start the game with the first slot being highlighted.
             <string>k_switchl = ord('A');
 k_switchr = ord('S');
 
-instance_create( 100, 100, charSlots[0]);
+instance_create( x, y, charSlots[0]);
 </string>
           </argument>
         </arguments>
@@ -87,13 +87,29 @@ instance_create( 100, 100, charSlots[0]);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( keyboard_check( k_switchr )){
+            <string>if( keyboard_check_pressed( k_switchr )){
     
     slotnum++;
+    
+    if( slotnum % 4 == 0){
+        slotnum = 0;
+    }
     
     if( instance_exists( obj_player )){
         instance_create( obj_player.x, obj_player.y, charSlots[slotnum]);
         with( obj_player ){
+            instance_destroy();
+        }
+    }
+    else if( instance_exists( obj_brute )){
+        instance_create( obj_brute.x, obj_brute.y, charSlots[slotnum]);
+        with( obj_brute ){
+            instance_destroy();
+        }
+    }
+    else if( instance_exists( obj_guard )){
+        instance_create( obj_guard.x, obj_guard.y, charSlots[slotnum]);
+        with( obj_guard ){
             instance_destroy();
         }
     }

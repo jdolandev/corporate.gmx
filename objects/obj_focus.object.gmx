@@ -29,6 +29,15 @@
     x = obj_player.x;
     y = obj_player.y;
 }
+else if( instance_exists( obj_brute )){
+    x = obj_brute.x;
+    y = obj_brute.y;
+}
+else if( instance_exists( obj_guard )){
+    x = obj_guard.x;
+    y = obj_guard.y;
+}
+
 dist = 0;
 
 j_up = gp_axisrv;
@@ -55,8 +64,18 @@ j_down = gp_axislv;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_player.x;
-y = obj_player.y - dist;
+            <string>if( instance_exists( obj_player )){
+    x = obj_player.x;
+    y = obj_player.y;
+}
+else if( instance_exists( obj_brute )){
+    x = obj_brute.x;
+    y = obj_brute.y;
+}
+else if( instance_exists( obj_guard )){
+    x = obj_guard.x;
+    y = obj_guard.y;
+}
 
 if( keyboard_check( vk_up ) || gamepad_axis_value(0, j_up) &lt; -0.25){
     //If you're within 64 pixels of distance from the player

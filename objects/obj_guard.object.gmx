@@ -35,7 +35,7 @@ S_AIR_ACCEL     = 0.4;      //Accel. from running in the air
 S_AIR_FRIC      = 0.2;      //Friction in the air (
 S_JUMP_SPEED    = -4.5;
 S_DJUMP_SPEED   = -0;       //Double jump speed
-S_MAX_H         = 5;        //Max horizontal speed
+S_MAX_H         = 1;        //Max horizontal speed
 S_MAX_V         = 5;        //Max vertical speed
 S_SLOPE_SLOW    = 0.7;      //Decceleration while climbing slopes
 
