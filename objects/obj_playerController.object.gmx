@@ -64,6 +64,9 @@ slotnum = 0;    //Start the game with the first slot being highlighted.
             <string>k_switchl = ord('A');
 k_switchr = ord('S');
 
+j_lb = gp_shoulderl;
+j_rb = gp_shoulderr;
+
 instance_create( x, y, charSlots[0]);
 </string>
           </argument>
@@ -87,11 +90,11 @@ instance_create( x, y, charSlots[0]);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( keyboard_check_pressed( k_switchr )){
+            <string>if( keyboard_check_pressed( k_switchr ) or gamepad_button_check_pressed(0, j_rb)){
     
     slotnum++;
     
-    if( slotnum % 4 == 0){
+    if( slotnum == 4){
         slotnum = 0;
     }
     
@@ -112,6 +115,39 @@ instance_create( x, y, charSlots[0]);
         with( obj_guard ){
             instance_destroy();
         }
+    }
+    if( gamepad_is_connected(0) ){
+        gamepad_set_vibration(0, 0, 0);
+    }
+}
+else if( keyboard_check_pressed( k_switchl ) or gamepad_button_check_pressed(0, j_lb)){
+    
+    slotnum--;
+    
+    if( slotnum &lt; 0 ){
+        slotnum = 3;
+    }
+    
+    if( instance_exists( obj_player )){
+        instance_create( obj_player.x, obj_player.y, charSlots[slotnum]);
+        with( obj_player ){
+            instance_destroy();
+        }
+    }
+    else if( instance_exists( obj_brute )){
+        instance_create( obj_brute.x, obj_brute.y, charSlots[slotnum]);
+        with( obj_brute ){
+            instance_destroy();
+        }
+    }
+    else if( instance_exists( obj_guard )){
+        instance_create( obj_guard.x, obj_guard.y, charSlots[slotnum]);
+        with( obj_guard ){
+            instance_destroy();
+        }
+    }
+    if( gamepad_is_connected(0) ){
+        gamepad_set_vibration(0, 0, 0);
     }
 }
 </string>

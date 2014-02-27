@@ -27,7 +27,9 @@
             <kind>1</kind>
             <string>if( instance_exists( obj_player )){
     x = obj_player.x;
-    y = obj_player.y;
+    if((obj_player.on_ground) &amp;&amp; (gamepad_axis_value(0, gp_padu) &lt; 0.25) ){
+        y = obj_player.y;
+    }
 }
 else if( instance_exists( obj_brute )){
     x = obj_brute.x;
@@ -66,7 +68,21 @@ j_down = gp_axislv;
             <kind>1</kind>
             <string>if( instance_exists( obj_player )){
     x = obj_player.x;
-    y = obj_player.y;
+    if( obj_player.on_ground ) &amp;&amp; ( place_meeting(obj_player.x, obj_player.y + 1, obj_slopeR2_mask)
+                                ||( place_meeting(obj_player.x, obj_player.y + 1, obj_slopeL2_mask))){
+        y = round(obj_player.y);
+    }
+    else if((obj_player.on_ground) &amp;&amp; (gamepad_axis_value(0, j_up) &gt; -0.25) ){
+        if( y &gt; obj_player.y){
+            y -= abs( obj_player.y - y) / 4;
+        }
+        else if( y &lt; obj_player.y){
+            y += abs( obj_player.y - y) / 4;   
+        }
+        else{
+            y = obj_player.y;
+        }
+    }
 }
 else if( instance_exists( obj_brute )){
     x = obj_brute.x;
